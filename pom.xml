@@ -9,8 +9,8 @@
   <name>Skogmark-Parent-Pom</name>
   <packaging>pom</packaging>
   <properties>
-    <java.version>1.8</java.version>
-    <jdk.version>1.8</jdk.version>
+    <java.version>11</java.version>
+    <jdk.version>11</jdk.version>
     <spring.security.version>4.0.4.RELEASE</spring.security.version>
     <spring.boot.version>1.5.5.RELEASE</spring.boot.version>
     <junit.version>4.12</junit.version>
@@ -34,7 +34,7 @@
     <guava.version>23.0</guava.version>
     <commons-httpclient.version>4.5.6</commons-httpclient.version>
     <commons-io.version>2.6</commons-io.version>
-    <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     <maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
   </properties>
   <dependencyManagement>
@@ -206,9 +206,15 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <source>${jdk.version}</source>
-          <target>${jdk.version}</target>
+          <release>${jdk.version}</release>
         </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm</artifactId>
+            <version>6.2</version>
+          </dependency>
+        </dependencies>
       </plugin>
     </plugins>
     <pluginManagement>
