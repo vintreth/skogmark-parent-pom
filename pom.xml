@@ -5,28 +5,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.skogmark</groupId>
   <artifactId>skogmark-parent-pom</artifactId>
-  <version>1.5.1-SNAPSHOT</version>
+  <version>1.6.1-SNAPSHOT</version>
   <name>Skogmark-Parent-Pom</name>
   <packaging>pom</packaging>
   <properties>
     <java.version>11</java.version>
     <jdk.version>11</jdk.version>
-    <spring.security.version>4.0.4.RELEASE</spring.security.version>
     <spring.boot.version>1.5.5.RELEASE</spring.boot.version>
     <junit.version>4.12</junit.version>
     <spring.orm.version>4.2.4.RELEASE</spring.orm.version>
-    <spring.version>4.3.10.RELEASE</spring.version>
-    <cglib.version>3.2.0</cglib.version>
-    <hibernate.version>5.0.6.Final</hibernate.version>
-    <mysql.connector.version>5.1.38</mysql.connector.version>
-    <jstl.version>1.2</jstl.version>
-    <log4j.version>1.2.17</log4j.version>
     <slf4j.version>1.7.5</slf4j.version>
-    <jsp.api.version>2.0</jsp.api.version>
-    <sqlite.version>3.19.3</sqlite.version>
-    <sqlite.dialect.version>0.1.2</sqlite.dialect.version>
-    <javaee-api.version>7.0</javaee-api.version>
-    <jta.version>1.1</jta.version>
     <mockito.version>2.0.2-beta</mockito.version>
     <jackson.version>1.9.13</jackson.version>
     <jackson.databind.version>2.9.3</jackson.databind.version>
@@ -39,49 +27,7 @@
   </properties>
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-test</artifactId>
-        <version>${spring.version}</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax</groupId>
-        <artifactId>javaee-api</artifactId>
-        <version>${javaee-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>cglib</groupId>
-        <artifactId>cglib</artifactId>
-        <version>${cglib.version}</version>
-      </dependency>
-      <!-- Logs -->
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>apache-log4j-extras</artifactId>
-        <version>${log4j.version}</version>
-      </dependency>
       <!-- Spring -->
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-core</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-beans</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot</artifactId>
@@ -89,55 +35,10 @@
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
-        <artifactId>spring-webmvc</artifactId>
-        <version>${spring.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework</groupId>
         <artifactId>spring-orm</artifactId>
         <version>${spring.orm.version}</version>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-web</artifactId>
-        <version>${spring.security.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-config</artifactId>
-        <version>${spring.security.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-taglibs</artifactId>
-        <version>${spring.security.version}</version>
-      </dependency>
       <!-- Persistence -->
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>${hibernate.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.transaction</groupId>
-        <artifactId>jta</artifactId>
-        <version>${jta.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.xerial</groupId>
-        <artifactId>sqlite-jdbc</artifactId>
-        <version>${sqlite.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.enigmabridge</groupId>
-        <artifactId>hibernate4-sqlite-dialect</artifactId>
-        <version>${sqlite.dialect.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>${mysql.connector.version}</version>
-      </dependency>
       <dependency>
         <groupId>org.postgresql</groupId>
         <artifactId>postgresql</artifactId>
