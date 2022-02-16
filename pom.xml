@@ -19,7 +19,7 @@
     <jackson.version>1.9.13</jackson.version>
     <jackson.databind.version>2.9.3</jackson.databind.version>
     <jackson-datatype-jdk8.version>2.9.6</jackson-datatype-jdk8.version>
-    <postgresql.version>42.1.4</postgresql.version>
+    <postgresql.version>42.3.3</postgresql.version>
     <guava.version>23.0</guava.version>
     <commons-httpclient.version>4.5.6</commons-httpclient.version>
     <commons-io.version>2.6</commons-io.version>
